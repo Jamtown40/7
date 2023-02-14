@@ -1,0 +1,63 @@
+sQuote = str("Chris Ortega")
+
+sQuote2 = "Chris Ortega"
+
+iPosition = 0
+while iPosition < len(sQuote):
+     sCharacter = sQuote[iPosition]
+     print(sCharacter)
+     iPosition += 1
+
+
+for sCharacter in sQuote:
+     print(sCharacter)
+
+
+for iPosition in range(0, len(sQuote), 2):
+     sCharacter = sQuote[iPosition]
+     print(sCharacter)
+
+sFirst = "Moose"
+sMiddle1 = "Kuaui"
+sMiddle2 = "Comet"
+sLast  = "Bassador"
+
+sFullName = sFirst + " " + sMiddle1 + " " + sMiddle2 + " " + sLast
+print(sFullName)
+
+# Slicing: 
+sSlice = sFullName[0:5]
+print(sSlice)
+
+sSlice = sFullName[:7]
+print(sSlice)
+
+sSlice = sFullName[7:]
+print(sSlice)
+
+sSlice = sFullName[0:26:2]
+print(sSlice)
+
+sSlice = sFullName[-5:]
+print(sSlice)
+
+# Functions versus Methods:
+print( len(sFullName)  )
+
+print( sFullName.isalpha() )
+
+print( sFullName.endswith("r")  )
+
+print( sFullName.lower() )
+
+sName1 = "----Kayla----"
+sName2 = " Pasquale "
+
+print( sName1.lstrip('-') )
+
+print( sName1.rstrip('-') )
+
+print( sName1.rstrip('-').lstrip('-') )
+print( sName1.strip('-') )
+
+print( len(sName2.strip())  )
